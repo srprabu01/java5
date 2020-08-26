@@ -1,0 +1,51 @@
+public class Automobile{
+      String maker="Ramakrishnan";
+      String vehicleIdentificationNo="R78R";
+      float Bluebookvalue=7.8f;
+      int year=2018;
+      int passengers=4;
+    }
+public class Car extends Automobile{
+	boolean warranty=true;	
+	int doors=4;
+	boolean imported=true;
+	int topspeed=7821;
+	String size="large";
+	String reardoor="a";
+             public void Cardetails(){
+	System.out.println("Maker:"+maker);
+	System.out.println("Vechicle Identification No:"+vehicleIdentificationNo);
+	System.out.println("Bluebookvalue:"+Bluebookvalue);
+	System.out.println("Year:"+year);
+	System.out.println("Passengers:"+passengers);
+	System.out.println("Warranty:"+warranty);
+	System.out.println("Doors:"+doors);
+	System.out.println("Imported:"+imported);
+	System.out.println("Size:"+size);
+	System.out.println("Reardoor:"+reardoor);
+                   }
+   }
+public class Truck extends Automoblie{
+	boolean topper=true;
+	String wheels="fourwheels";
+	int racks=4;	
+           public void Truckdetails(){
+	System.out.println("Maker:"+maker);
+	System.out.println("Vehicle Identification No:"+vehicleIdentificationNo);
+	System.out.println("Bluebookvalue:"+Bluebookvalue);
+	System.out.println("Year:"+year);
+	System.out.println("Passengers:"+passengers);
+	System.out.println("Topper:"+topper);
+	System.out.println("Wheels:"+wheels);
+	System.out.println("Racks:"+racks);
+	}
+}
+
+public class Vehicle{
+  public static void main(String args[]){
+	Car c=new Car();
+	c.Cardetails();
+	Truck t=new Truck();
+	t.Truckdetails();
+    }
+}

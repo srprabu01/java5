@@ -1,0 +1,25 @@
+public class Degree{
+	public void getDegree(){	
+		System.out.println("I got a degree");
+		}
+}
+public class Undergraduate extends Degree{
+	public void getUndergraduate(){
+		System.out.println("I am an Undergraduate");
+	}
+}
+public class Postgraduate extends Degree{
+	public void getPostgraduate(){
+		System.out.println("I am an Postgraduate");
+	}
+}
+public class Deg{
+  public static void main(String args[]){
+	 Degree d1=new Degree();
+	 d1.getDegree();
+	 Undergraduate d2=new  Undergraduate();
+	 d2.getUndergraduate();
+	 Postgraduate d3=new  Postgraduate();
+	 d3.getPostgraduate();
+	}
+}
